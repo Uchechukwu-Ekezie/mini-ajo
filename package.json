@@ -6,7 +6,18 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "create-issues": "node create-github-issues.js",
+    "test-issues": "node create-github-issues.js --test",
+    "compile": "cd smart-contracts && hardhat compile",
+    "test": "cd smart-contracts && hardhat test",
+    "test:gas": "cd smart-contracts && REPORT_GAS=true hardhat test",
+    "node": "cd smart-contracts && hardhat node",
+    "deploy:local": "cd smart-contracts && hardhat run scripts/deploy.ts --network localhost",
+    "deploy:baseSepolia": "cd smart-contracts && hardhat run scripts/deploy.ts --network baseSepolia",
+    "deploy:base": "cd smart-contracts && hardhat run scripts/deploy.ts --network base",
+    "verify": "cd smart-contracts && hardhat verify",
+    "clean": "cd smart-contracts && hardhat clean"
   },
   "dependencies": {
     "@coinbase/onchainkit": "latest",
@@ -22,11 +33,18 @@
     "@eslint/eslintrc": "^3",
     "@farcaster/quick-auth": "^0.0.7",
     "@next/eslint-plugin-next": "^15.3.4",
+    "@nomicfoundation/hardhat-toolbox": "^6.1.0",
+    "@nomicfoundation/hardhat-verify": "^2.1.3",
+    "@octokit/rest": "^20.0.0",
+    "@openzeppelin/contracts": "^5.4.0",
+    "@types/chai": "^5.2.3",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "dotenv": "^17.2.3",
     "eslint": "^9",
     "eslint-config-next": "15.3.4",
+    "hardhat": "^2.27.1",
     "typescript": "^5"
   }
 }

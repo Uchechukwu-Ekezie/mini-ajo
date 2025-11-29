@@ -39,3 +39,11 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# hardhat
+smart-contracts/cache/
+smart-contracts/artifacts/
+smart-contracts/typechain-types/
+!smart-contracts/typechain-types/.gitkeep
+smart-contracts/coverage/
+smart-contracts/coverage.json
