@@ -7,11 +7,7 @@ This PR adds comprehensive smart contract infrastructure for the Ajosave DeFi pl
 
 ### Smart Contracts Architecture
 - **Base Contract System**: Created `PoolBase.sol` with common functionality for all pool types
-  - Member management system
-  - Contribution tracking
-  - Penalty enforcement mechanisms
-  - Security features (ReentrancyGuard, Pausable, Ownable)
-
+  
 - **Three Pool Implementations**:
   1. **RotationalPool** - Traditional Ajo/Esusu style with turn-based payouts
   2. **TargetPool** - Goal-based savings pool with deadline mechanism
