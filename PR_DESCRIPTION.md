@@ -11,7 +11,7 @@ This PR adds comprehensive smart contract infrastructure for the Ajosave DeFi pl
 - **Three Pool Implementations**:
   1. **RotationalPool** - Traditional Ajo/Esusu style with turn-based payouts
   2. **TargetPool** - Goal-based savings pool with deadline mechanism
-  3. **FlexiblePool** - Flexible deposits/withdrawals with yield generation
+  3. **Flexibl** - Flexible deposits/withdrawals with yield generation
 
 ### Development Infrastructure
 - ✅ Hardhat 2.27.1 setup with Base network configuration
